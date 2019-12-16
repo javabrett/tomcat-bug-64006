@@ -1,0 +1,1 @@
+This is test-code for issue described at https://bz.apache.org/bugzilla/show_bug.cgi?id=64006 .

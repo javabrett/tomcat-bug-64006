@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	// OK
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.13'
+    // FAILS
+    // implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.14'
+}
+
+ext {
+   javaMainClass = "tomcat.embedded.test.Main"
+}
+ 
+application {
+    mainClassName = javaMainClass
+}
